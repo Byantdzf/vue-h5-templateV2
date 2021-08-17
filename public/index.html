@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
+    <meta name="format-detection" content="telephone=yes" />
+    <link rel="icon" href="<%= BASE_URL %>favicon.png">
+    <link rel="stylesheet" href="https://g.alicdn.com/de/prismplayer/2.8.8/skins/default/aliplayer-min.css" />
+<!--    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.2/css/swiper.min.css">-->
+    <script src="https://res.sharetrace.com/sharetrace.min.js"></script>
+    <script src="https://g.alicdn.com/de/prismplayer/2.8.8/aliplayer-min.js"></script>
+    <!-- <% for (var i in
+      htmlWebpackPlugin.options.cdn&&htmlWebpackPlugin.options.cdn.css) { %>
+      <link href="<%= htmlWebpackPlugin.options.cdn.css[i] %>" rel="preload" as="style" />
+      <link href="<%= htmlWebpackPlugin.options.cdn.css[i] %>" rel="stylesheet" />
+	  <% } %> -->
+    <title><%= webpackConfig.name %></title>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJDJ19HG6B"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-KJDJ19HG6B');
+    </script>
+  </head>
+  <body>
+<!--    <noscript>-->
+<!--      <strong>We're sorry but <%= webpackConfig.name %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>-->
+<!--    </noscript>-->
+    <div id="app"></div>
+    <!-- 使用CDN加速的JS文件，配置在vue.config.js下 -->
+    <!-- <% for (var i in
+      htmlWebpackPlugin.options.cdn&&htmlWebpackPlugin.options.cdn.js) { %>
+      <script src="<%= htmlWebpackPlugin.options.cdn.js[i] %>"></script>
+    <% } %> -->
+    <!-- built files will be auto injected -->
+  </body>
+  <script>
+    (function (i, s, o, g, r, a, m) {
+      i['GoogleAnalyticsObject'] = r
+      i[r] = i[r] || function () {
+        (i[r].q = i[r].q || []).push(arguments)
+      }, i[r].l = 1 * new Date()
+      a = s.createElement(o),
+        m = s.getElementsByTagName(o)[0]
+      a.async = 1
+      a.src = g
+      m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga')
+    // ga('create', 'UA-98664364-10', 'auto','myTracker', {
+    //   userId: '12345')
+    // ga('create', 'UA-98664364-11', 'auto', 'myTracker', {  // 创建追踪器
+    //   userId: '12345'
+    // })
+    // ga((tracker) => {
+    //   console.log(tracker, 'adssssssss')
+    // })
+    ga('create', 'UA-98664364-10', 'auto')
+    ga('send', 'pageview') // 是否要统计着陆页面访问，取决于你的需求，这个不一定需要，会和`router`统计有重复
+  </script>
+</html>
