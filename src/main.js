@@ -108,6 +108,7 @@ const i18n = new VueI18n({
   messages: {
     'zh': require('@/assets/i18n/zh.js'),
     'en': require('@/assets/i18n/en.js')
+
   }
 })
 new Vue({
